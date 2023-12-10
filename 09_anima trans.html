@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body {
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        img {
+            width: 250px;
+            margin: 50px;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease-in-out;
+            animation: rotateAnimation 4s infinite;
+        }
+
+        @keyframes rotateAnimation {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        img:hover {
+            filter: grayscale(0%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation</h1>
+    <img src="image.jpg" alt="Image">
+</body>
+</html>

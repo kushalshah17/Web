@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .column {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        @media (min-width: 600px) {
+            .column {
+                width: 50%;
+                float: left;
+            }
+        }
+    </style>
+    <title>Simple Responsive Two-Column Layout</title>
+</head>
+<body>
+
+    <div class="column" style="background-color: lightgrey">
+        <h2>Topic</h2>
+        <p>Coding</p>
+    </div>
+
+    <div class="column" style="background-color: gray">
+        <h2>Information</h2>
+        <p>Algorithm</p>
+    </div>
+
+</body>
+</html>

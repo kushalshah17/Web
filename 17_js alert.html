@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Page</title>
+    <style>
+        img {
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: green;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome</h1>
+
+    <img src="image.jpg" alt="Image">
+    <br>
+    <button id="alertButton">Click me</button>
+    <script>
+        document.getElementById('alertButton').addEventListener('click', function() {
+            alert('Hello!');
+        });
+    </script>
+
+</body>
+</html>
